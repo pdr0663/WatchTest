@@ -4,8 +4,8 @@
   <script>
     function Test() {
       console.log(document.getElementById("status"))
-      document.getElementById("status").innerHTML = navigator.geolocation.watchPosition;
-      document.getElementById("status").innerHTML += watchLocation;
+      document.getElementById("status").innerHTML = "watchPosition == \n" + navigator.geolocation.watchPosition;
+      document.getElementById("status").innerHTML += "watchLocation == \n" + watchLocation;
     }
   </script>
 </head>
