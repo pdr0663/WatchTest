@@ -3,7 +3,9 @@
   <title>Frenzy Navigation App</title>
   <script>
     function Test() {
-    document.getElementById("status").innerHTML = document.watchLocation;
+      console.log(document.getElementById("status"))
+      document.getElementById("status").innerHTML = navigator.geolocation.watchPosition;
+      document.getElementById("status").innerHTML += watchLocation;
     }
   </script>
 </head>
